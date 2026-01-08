@@ -43,10 +43,12 @@ transition to hover effect*/
   justify-content: center; 
   align-items: center; 
   border: 2px solid black; 
+  height: 600px;
 }
 
 .row {
   border: 1px solid rgb(0, 0, 0);
+
 }
 /* might append row into a div then
 append that div to grid container. considering
@@ -55,6 +57,6 @@ stay in. might be able to use flexbox
 for that*/ 
 
 .column{
-  
+ 
 }
 
