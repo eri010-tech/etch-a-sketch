@@ -19,8 +19,10 @@ button{
 }
 
 #reset-btn{
-/* add hover effect + add padding to input box*/ 
+/* add hover effect + add padding to input box + add a 
+transition to hover effect*/ 
 }
+
 #project-container{
   display: flex; 
   flex-direction: column; 
@@ -43,3 +45,15 @@ button{
   border: 2px solid black; 
 }
 
+.row {
+  border: 2px solid pink;
+}
+/* might append row into a div then
+append that div to grid container. considering
+doing this to create a box for everything to 
+stay in. might be able to use flexbox 
+for that*/ 
+
+.column{
+  border: 1px solid green; 
+}
