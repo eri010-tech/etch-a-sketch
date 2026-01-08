@@ -4,4 +4,28 @@
   padding: 0; 
 }
 
+body{
+  font-family: Arial, Helvetica, sans-serif; 
+}
+#project-container{
+  display: flex; 
+  flex-direction: column; 
+  border: 3px solid red; 
+  min-height: 100vh;
+  justify-content: space-evenly;
+}
+
+#grid-option-container{
+  border: 3px solid purple;
+  display: flex;
+  justify-content: center; 
+}
+
+#grid-container {
+  font-size: 10px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border: 2px solid black; 
+}
 
