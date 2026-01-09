@@ -11,11 +11,11 @@ button{
   padding: 5px 10px; 
   border-radius: 10px;
   cursor: pointer;  
+  font-size: 20px;
   /* add a hover effect */ 
 }
 #click-btn{
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 #reset-btn{
@@ -25,7 +25,6 @@ transition to hover effect*/
 
 
 #grid-option-container{
-  border: 3px solid purple;
   display: flex;
   justify-content: center; 
   height: auto;
