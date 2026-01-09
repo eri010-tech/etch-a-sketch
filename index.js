@@ -1,21 +1,29 @@
 //console.log("sweet floating in the ether"); 
-const gridContainer = document.querySelector("#grid-container"); 
 
-//makeGrid function utilizes nested loops to create a dynamic grid. 
-// I couldn't figure this out myself, so the answer comes from stack overflow. 
+/* I couldn't figure this out myself, so all the grid code is from 
+a YouTube channel called: Marvin Botchway!!! */
 
-function makeGrid(size){
-  for(let i = 0; i < size; i++){ //outer loop is purple 
-    let row = document.createElement("div"); 
-    row.classList.add("row"); 
-    gridContainer.appendChild(row); 
-    row.textContent = i;  
-    for(let j = 1; j < size; j++){ // inner loop is blue 
-    let column = document.createElement("div"); 
-    column.classList.add("column"); 
-    row.appendChild(column); 
-    column.textContent = j; 
-    }
-  } 
+const gridSide = 555; 
+let rows = 16;
+let columns = 16; 
+
+
+const gridSketchpad = document.querySelector(".sketchpad");
+gridSketchpad.style.width = `${gridSide}px`;
+gridSketchpad.style.height = `${gridSide}px`; 
+
+function makeGridSquares() {
+  for(let i = 0; i < (rows * columns); i++){
+    const gridPiece = document.createElement("div");
+
+    gridPiece.style.width = `${(gridSide / columns) - 2}px`;
+    gridPiece.style.height = `${(gridSide / rows) - 2}px`;
+    gridPiece.classList.add("gridSquare");
+
+    gridSketchpad.appendChild(gridPiece); 
+  }
 }
-makeGrid(16); 
+
+makeGridSquares();
+
+//talk about why this works!!!
