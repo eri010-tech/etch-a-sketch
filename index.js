@@ -199,6 +199,20 @@ function checkUserInput(numberPicked){
     return numberPicked; 
   }
 }
-// to do: remove duplicate of code. make sure there isn't any bugs.
-// start working on the reset button. check odin website to make sure 
-//you've done everything required for the project. maybe for extra credit?
+// to do: ### remove duplicate of code #### . make sure there isn't any bugs.
+// check odin website to make sure  you've done everything required for the project. 
+// maybe do extra credit?
+
+/* updated to-do list: get rid of reset Button -- it is not needed. Instead,
+focus on extra credit Odin, making sure project meets Odin's requriments,
+and fixing the checkUserInput function so that if the num is less than one 
+or greater than 100, the grid will reset to the prefixed 
+16x16  grid, which is currently doesn't do. I was thinking that 
+maybe we could add a variable:
+let number approved = false. then under each if statement 
+we say if it's false or true. Then maybe create another if statement under
+it that tells what to do if approved = false aka 
+reset the sketchpad by removing the child elements, turn off
+the mouseover listener, make the background back to white, then 
+lastly, set the tools.rows and tools.columns = 16, which is the 
+default grid layout for this project. */ 
