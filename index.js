@@ -7,7 +7,6 @@ const gridSide = 555;
 let rows = 16;
 let columns = 16; 
 
-
 const gridSketchpad = document.querySelector(".sketchpad");
 gridSketchpad.style.width = `${gridSide}px`;
 gridSketchpad.style.height = `${gridSide}px`; 
@@ -52,4 +51,32 @@ function randomRGBColor(){
 }
 
 
+// "Click Button" event listener will prompt the user to pick a row/column number between
+// 0-100. The grid should then change to the designated grid size.
+
+const clickBtn = document.querySelector("#click-btn"); 
+
+clickBtn.addEventListener('click', changeGrid); 
+
+let check; 
+
+function changeGrid(){
+  
+  let command = prompt("please pick a grid number between 1 and 100");
+  let numberPicked = command; 
+  
+  check = checkUserInput(numberPicked); 
+  console.log(check); 
+   
+} 
+
+function checkUserInput(numberPicked){
+  if (numberPicked > 100){
+    alert("maximumm number allowed is 100. please click the button again to type a new number");
+  } else if (numberPicked < 1){
+    alert("minimum number allowed is 1. please click the button again to type a new number");
+  } else {
+    return numberPicked; 
+  }
+}
 
