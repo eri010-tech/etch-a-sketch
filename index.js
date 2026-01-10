@@ -91,11 +91,13 @@ function checkUserInput(numberPicked){
 
 /* I couldn't figure this out myself, so all the grid code is from 
 a YouTube channel called: Marvin Botchway!!! */
+
 let tools = {
 gridSide: 555, 
 rows: 16,
 columns: 16 
 }
+
 console.log(typeof tools);
 console.log(tools.gridSide);
 console.log(tools.rows);
@@ -161,7 +163,7 @@ clickBtn.addEventListener('click', changeGrid);
 function changeGrid(){
   let command = prompt("please pick a grid number between 1 and 100"); 
   let numberPicked = command; 
-  
+
   check = checkUserInput(numberPicked); 
   let convertToNumber = Number(check);
   let gridNumber = convertToNumber; 
@@ -190,10 +192,13 @@ function changeGrid(){
 
 function checkUserInput(numberPicked){
   if (numberPicked > 100){
-    alert("maximumm number allowed is 100. please click the button again to type a new number");
+    alert("maximumm number allowed is 100. please click the button again to type a new number"); 
   } else if (numberPicked < 1){
-    alert("minimum number allowed is 1. please click the button again to type a new number");
+    alert("minimum number allowed is 1. please click the button again to type a new number"); 
   } else {
     return numberPicked; 
   }
 }
+// to do: remove duplicate of code. make sure there isn't any bugs.
+// start working on the reset button. check odin website to make sure 
+//you've done everything required for the project. maybe for extra credit?
