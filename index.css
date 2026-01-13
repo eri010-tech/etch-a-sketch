@@ -8,11 +8,21 @@ body{
   background-color: rgb(227, 199, 195);
 }
 #click-btn{
-  padding: 5px 10px; 
-  border-radius: 10px;
+  padding: 7px 13px; 
+  border-radius: 20px;
   cursor: pointer;  
-  font-size: 20px;
-  /* add a hover effect, add background color, add transtion to hover, remove border*/ 
+  font-size: 27px;
+  font-weight: bold;
+  background-color: rgb(189, 116, 105); 
+  border-style: none; 
+  color: #ffff; 
+  transition: background-color 0.4s;
+}
+
+#click-btn:hover{
+  background-color: #ffff; 
+  color: rgb(189, 116, 105); 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 #grid-option-container{
@@ -26,6 +36,7 @@ body{
   margin: 100px auto; 
   background-color: #fff; 
   flex-wrap: wrap;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);  
 }
 
 .gridSquare{
