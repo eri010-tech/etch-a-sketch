@@ -79,7 +79,7 @@ function changeGrid(){
    of the DOM ready for the new grid number, mouseover event listener was
    temporarily removed, and the gridSketchpad background was set back to white.
    Now both javascript and the DOM are ready to change the grid to the user's
-   new input number */ 
+   new input number */  
 
   gridSketchpad.removeEventListener('mouseover', changeGridColors); 
   gridSketchpad.style.backgroundColor = "white"; 
@@ -90,6 +90,7 @@ function changeGrid(){
 
   gridSketchpad.addEventListener('mouseover', changeGridColors); 
 } 
+ 
 
 function checkUserInput(numberPicked){
   if (numberPicked > 100){
@@ -98,12 +99,8 @@ function checkUserInput(numberPicked){
     alert("minimum number allowed is 1. please click the button again to type a new number"); 
   } else {
     return numberPicked; 
-  }
+  } 
 }
-
-
-
-
 
 
 
