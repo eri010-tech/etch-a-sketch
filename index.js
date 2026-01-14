@@ -93,15 +93,15 @@ function changeGrid(){
  
 
 function checkUserInput(numberPicked){
-  let resetToDefaultGridOne = tools.rows; 
-  let resetToDefaultGridTwo = tools.columns; 
-
   if (numberPicked > 100){
-    alert("maximumm number allowed is 100. please click the button again to type a new number");
-    return resetToDefaultGridOne;  
+    alert("maximumm number allowed is 100. please click the button again to type a new number"); 
+    return tools.rows; // meaning, prevent the grid from changing to new prompt # 
+    // if the requirements aren't met. This essentialy keeps the grid to the most recent 
+    // prompt # that met the requirments. Also, I could have replaced tools.rows with 
+    // tools.columns and the code would still run the same.  
   } else if (numberPicked < 1){
     alert("minimum number allowed is 1. please click the button again to type a new number"); 
-    return resetToDefaultGridTwo; 
+    return tools.rows; 
   } else {
     return numberPicked; 
   } 
@@ -109,8 +109,7 @@ function checkUserInput(numberPicked){
 
 
 
-// to do: 
-// check odin website to make sure  you've done everything required for the project. 
+ 
 // maybe do extra credit?
 
 /* updated to-do list: get rid of reset Button -- it is not needed. Instead,
