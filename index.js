@@ -93,14 +93,15 @@ function changeGrid(){
  
 
 function checkUserInput(numberPicked){
-  let resetToDefaultGrid = tools.rows; 
+  let resetToDefaultGridOne = tools.rows; 
+  let resetToDefaultGridTwo = tools.columns; 
 
   if (numberPicked > 100){
     alert("maximumm number allowed is 100. please click the button again to type a new number");
-    return resetToDefaultGrid;  
+    return resetToDefaultGridOne;  
   } else if (numberPicked < 1){
     alert("minimum number allowed is 1. please click the button again to type a new number"); 
-    return resetToDefaultGrid; 
+    return resetToDefaultGridTwo; 
   } else {
     return numberPicked; 
   } 
